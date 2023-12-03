@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.example.application1.OutsideScrollview xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".sign_up"
+    android:scrollbars="none"
+    android:background="@drawable/background">
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="70sp"
+                android:textColor="#ff0022"
+                android:text="Sign up!"
+                android:gravity="center"></TextView>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+
+                android:orientation="vertical"
+                android:paddingLeft="20dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:orientation="horizontal">
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+
+
+
+                        android:textSize="17sp"
+                        android:text="username:"
+
+                        ></TextView>
+                    <EditText
+                        android:layout_marginLeft="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/username"
+                        android:hint="Please input usernname"
+                        android:background="#ffffff"
+                        android:inputType="text"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:orientation="horizontal">
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:textSize="17sp"
+                        android:text="Password:"
+
+                        ></TextView>
+                    <EditText
+                        android:layout_marginLeft="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:hint="Please input password"
+                        android:inputType="textPassword"
+                        android:id="@+id/my_password"
+                        android:background="#ffffff" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+
+
+
+                        android:textSize="17sp"
+                        android:text="Email:"
+
+                        ></TextView>
+                    <EditText
+                        android:layout_marginLeft="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:hint="Please input email:"
+                        android:id="@+id/my_email"
+                        android:inputType="text"
+                        android:background="#ffffff" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:textSize="17sp"
+                        android:text="Phone:"
+
+                        ></TextView>
+                    <EditText
+                        android:layout_marginLeft="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:hint="Please input email:"
+                        android:id="@+id/my_phone"
+                        android:inputType="text"
+                        android:background="#ffffff" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_marginTop="20dp"
+                        android:textSize="17sp"
+                        android:text="please upload your pet's figure:"
+
+                        ></TextView>
+                    <ImageView
+                        android:layout_marginLeft="30dp"
+                        android:layout_width="100dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/dog"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="birth_date:"
+                        />
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="match_parent"
+                        android:id="@+id/birth_date"
+                        android:layout_marginLeft="20dp"
+                        android:gravity="center_vertical">
+
+                    </TextView>
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Calendar"
+                        android:id="@+id/btn_getdate"/>
+                </LinearLayout>
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/my_radio">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Please select your pets:"/>
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/radio_dog"
+                        android:text="Dog"/>
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/radio_cat"
+                        android:text="Cat"/>
+
+
+
+                </RadioGroup>
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/my_radio_gender">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Please select your pets' gender:"/>
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/radio_male"
+                        android:text="male"/>
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/radio_female"
+                        android:text="female"/>
+
+
+
+                </RadioGroup>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+
+                android:orientation="vertical"
+                android:paddingLeft="20dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:text="expectation:"/>
+                <ScrollView
+                    android:layout_width="300dp"
+                    android:layout_height="150dp"
+                    android:layout_gravity="center">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:orientation="vertical">
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp"
+                            android:background="#dddddd"
+                            android:inputType="textMultiLine"
+                            android:gravity="top"
+                            android:id="@+id/sign_up_expectation">
+
+                        </EditText>
+
+
+                    </LinearLayout>
+                </ScrollView>
+
+
+
+            </LinearLayout>
+          <CheckBox
+              android:layout_width="wrap_content"
+              android:layout_height="50dp"
+              android:text="@string/Agreement"
+              android:id="@+id/sign_up_acknowledge"
+              android:gravity="center"
+              android:layout_gravity="center_horizontal"/>
+<!--          <Button-->
+<!--              android:layout_width="wrap_content"-->
+<!--              android:layout_height="50dp"-->
+<!--              android:layout_gravity="center"-->
+<!--              android:textSize="20sp"-->
+<!--              android:text="Acknowledgement"-->
+<!--              android:id="@+id/acknow"/>-->
+          <Button
+              android:layout_width="150dp"
+              android:layout_height="50dp"
+              android:layout_gravity="center"
+              android:textSize="20sp"
+              android:enabled="false"
+              android:text="Create"
+              android:id="@+id/sign_up_create"
+              />
+
+
+
+
+
+
+       </LinearLayout>
+
+</com.example.application1.OutsideScrollview>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".sign_in"
+
+    android:orientation="vertical"
+    android:background="@drawable/dog"
+    >
+
+    <LinearLayout
+        android:layout_marginTop="350dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+
+        android:orientation="horizontal"
+        android:gravity="center"
+        >
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:textSize="17sp"
+            android:textColor="#000000"
+            android:text="User name:"></TextView>
+        <EditText
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+
+            android:hint="Please input username"
+            android:inputType="text"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="20dp">
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:textSize="17sp"
+            android:textColor="#000000"
+            android:text="Password:"></TextView>
+        <EditText
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+
+            android:hint="Please input password"
+            android:inputType="textPassword"/>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Remember Password"
+            android:background="#bbbbbb"
+            />
+
+        <Button
+            android:layout_marginLeft="60dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textSize="17sp"
+            android:text="Forget password"
+            android:id="@+id/forget"/>
+    </LinearLayout>
+
+    <Button
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Log in!"
+        android:layout_gravity="center"
+        android:textSize="17sp"
+        android:id="@+id/login"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Create account!"
+        android:layout_gravity="center"
+        android:textSize="17sp"
+        android:id="@+id/create"/>
+
+
+</LinearLayout>

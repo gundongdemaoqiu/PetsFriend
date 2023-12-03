@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    tools:context=".chat">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:gravity="center">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:id="@+id/chat_go_back"
+            android:text="@string/chat_go_back">
+
+        </Button>
+    </LinearLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_marginTop="100dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/chatRecyclerView"
+
+        android:layout_above="@id/message_Area"/>
+    <include
+        layout="@layout/activity_message_area"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="bottom"
+        android:layout_marginTop="5dp"
+        android:id="@+id/message_Area"/>
+</RelativeLayout>
+
+
+    <!--    <ScrollView-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_weight="20"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:id="@+id/scrollView">-->
+
+    <!--        <LinearLayout-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:orientation="vertical"-->
+    <!--            android:id="@+id/layout1">-->
+
+    <!--        </LinearLayout>-->
+    <!--    </ScrollView>-->
+<!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--android:layout_width="match_parent"-->
+<!--android:layout_height="match_parent"-->
+<!--android:background="@color/colorPrimaryDark"-->
+<!--android:gravity="bottom"-->
+<!--android:orientation="horizontal">-->
+
+<!--<EditText-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="wrap_content"-->
+<!--    android:layout_weight="1"-->
+<!--    android:textColorHint="#CFD8DC"-->
+<!--    android:textColor="#CFD8DC"-->
+<!--    android:hint="Write a message..."-->
+<!--    android:id="@+id/messageArea"-->
+<!--    android:maxHeight="80dp"-->
+<!--    />-->
+
+<!--<ImageView-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="wrap_content"-->
+<!--    android:layout_weight="4"-->
+<!--    android:padding="4dp"-->
+<!--    android:src="@android:drawable/ic_menu_send"-->
+<!--    android:id="@+id/sendButton"/>-->
+<!--</LinearLayout>-->
